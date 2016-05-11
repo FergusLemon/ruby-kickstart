@@ -6,9 +6,9 @@
 # got_three? ['a', 'a', 'a']  # => true
 # got_three? [1, 2, 1, 1]     # => false
 
-def three_in_a_row (elements)
+def got_three? (elements)
 	elements.each_cons 3 do |a, b, c|
     return true if a == b && b == c
+  else return false
   end
-  false
 end
